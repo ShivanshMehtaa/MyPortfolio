@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh Mehta</title>
+
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/shivansh.jpg')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}">
+    <title>Home Page</title>
+    
+
+</head>
+
+
+<body>
+
+    <header>
+        <h2>Shivansh Mehta</h2>
+
+        <ul class="navbar">
+            
+            <li><a href="{{url_for('.home', _anchor='home')}}">Home</a></li>
+            <li><a href="{{url_for('.home', _anchor='about')}}">About</a></li>
+            <li><a href="{{url_for('.home', _anchor='skills')}}">Skills</a></li>
+            <li><a href="{{url_for('.home', _anchor='services')}}">Services</a></li>
+            <li><a href="{{url_for('.home', _anchor='works')}}">Works</a></li>
+            <li><a href="{{url_for('.home', _anchor='contact')}}">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/ShivanshMehtaa"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/shivansh-mehta-399427226/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/_shivansh.mehta_/"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+
+        <div class="home-img">
+            <img src="{{url_for('static', filename='images/shivansh.jpg')}}" alt="main image">
+        </div>
+
+        <div class="home-text">
+            <span>Hello, I am </span>
+            <h2>Shivansh Mehta</h2>
+            <h3>Full-Stack Developer</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, corporis!</p>
+            <a href="{{url_for('.home', _anchor='contact')}}" class="btn">Contact Me</a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="{{url_for('static', filename='images/shivansh.jpg')}}" alt="">
+            </div>
+
+            <div class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat at neque iste dolorem natus atque
+                repellendus. Sit consequatur natus eaque quod enim dicta, optio ab. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Autem aliquam sunt impedit consectetur! Ducimus expedita, sequi similique
+                maiores repellat non, inventore consequatur tempore beatae veritatis consequuntur! Quidem voluptatem
+                dicta repellat laborum ab vero eum.
+
+                <div class="information">
+                    <div class="info-box">
+                        <i class="bx bxs-user"></i>
+                        <span>Shivansh Mehta</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="bx bxs-phone"></i>
+                        <span>+91 8815152527</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="bx bxs-envelope"></i>
+                        <span>shivanshmehta2003@gmail.com</span>
+                    </div>
+                </div>
+                <a href="{{url_for('download')}}" class="btn">Download Resume</a>
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+
+        <div class="skills-container">
+            <div class="bars">
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>90%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>C</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar c-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>C++</h3>
+                    <span>65%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar cpp-bar"></div>
+                </div>
+
+
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+
+
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>40%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>Flask</h3>
+                    <span>75%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar flask-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>Python</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar python-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>Django</h3>
+                    <span>60%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar django-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="{{url_for('static', filename='images/123.png')}}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Services</h2>
+            <span>My Services</span>
+        </div>
+
+        <div class="services-content">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>FrontEnd Development</h3>
+                <a href="">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-server"></i>
+                <h3>BackEnd Development</h3>
+                <a href="">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bxl-wordpress"></i>
+                <h3>FullStack Development</h3>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="heading">
+            <h2>Recent Works</h2>
+            <span>My Recent Works</span>
+        </div>
+
+        <div class="work-content">
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/BankManagementWithC">
+                <img src="{{url_for('static', filename='images/bank.jfif')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/TicketManagement">
+                <img src="{{url_for('static', filename='images/movie.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/LibraryManagementwithPython">
+                <img src="{{url_for('static', filename='images/library.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/RealEstate">
+                <img src="{{url_for('static', filename='images/realestate.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/ToDo">
+                <img src="{{url_for('static', filename='images/todo.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/MedicineShop">
+                <img src="{{url_for('static', filename='images/medicine.jfif')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/Portfolio">
+                <img src="{{url_for('static', filename='images/portfolio.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="http://medobtain.epizy.com/">
+                <img src="{{url_for('static', filename='images/hospital.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/StudentManagementSystem">
+                <img src="{{url_for('static', filename='images/student.jfif')}}" alt="">
+                </a>
+            </div>
+            <div class="work-img">
+                <a href="https://github.com/ShivanshMehtaa/TicTacToe">
+                <img src="{{url_for('static', filename='images/tic.png')}}" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-form" id="contact">
+        <h2>Contact Me</h2>
+        <span>Contact</span>
+        <form action="/" method="POST">
+            <div class="form-group">
+                <input type="Text" class="form-control" name="emp_name" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="company_name" id="exampleInputPassword1" placeholder="Enter your Company Name">
+            </div>
+            <div class="form-group">
+                <input type="integer" class="form-control" name="number" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter your Contact Number">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Please Leave A Message"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Contact Me</span>
+        </div>
+
+        <div class="contact-form">
+            <form action="/", methods="POST">
+                <input type="text" name="emp_name" id="" placeholder="Your Name">
+                <input type="text" name="company_name" id="" placeholder="Company Name">
+                <input type="email" name="emp_email" placeholder="Your Email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here"></textarea>
+                <input type="submit" value = "Send">
+            </form>
+        </div>
+    </section> -->
+
+
+
+    <section class="footer">
+        <div class="footer">
+            <h2>Shivansh Mehta</h2>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/shivansh-mehta-399427226/"><i class="bx bxl-linkedin"></i></a>
+                <a href="tel:8815152527"><i class="bx bxs-phone"></i></a>
+                <a href="mailto:shivanshmehta2003@gmail.com"><i class="bx bxs-message"></i></a>
+                <a href="https://www.instagram.com/_shivansh.mehta_/"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+</body>
+
+</html>
